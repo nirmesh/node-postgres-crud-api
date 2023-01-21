@@ -17,7 +17,7 @@ const createTable =(request, response)=>{
   if (error) {
     throw error;
   }
-  console.log("table created success")
+  console.log("table created successfully")
  // response.status(200).json(results.rows);
 });
 }
