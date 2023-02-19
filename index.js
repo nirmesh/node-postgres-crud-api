@@ -14,7 +14,7 @@ app.use(
 );
 
 app.get('/', (request, response) => {
-  response.json({ info: `Node.js, Express, and Postgres API developed by Nirmesh. Postgres host address::${process.env.DB_HOST}` });
+  response.json({ info: `Node.js, Express, and Postgres API developed by Nirmesh. Postgres host address::${process.env.DB_HOST},secret username::${process.env.SECRET_USERNAME},secret password::${process.env.SECRET_PASSWORD}` });
 });
 
 app.get('/users', db.getUsers);
